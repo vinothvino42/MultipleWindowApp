@@ -6,18 +6,39 @@
 //
 
 import SwiftUI
-import RealityKit
-import RealityKitContent
 
 struct ContentView: View {
+    @Environment(\.openWindow) private var openWindow
+    
     var body: some View {
-        VStack {
-            Model3D(named: "Scene", bundle: realityKitContentBundle)
-                .padding(.bottom, 50)
-
-            Text("Hello, world!")
+        VStack(spacing: 60) {
+            Card(image: "img1", buttonTitle: "Lake Tahoe") {
+                openWindow(id: "lake-tahoe")
+            }
+            
+            Card(image: "img2", buttonTitle: "Kluane National Park") {
+                openWindow(id: "kluane-national-park")
+            }
         }
         .padding()
+    }
+}
+
+struct Card: View {
+    let image: String
+    let buttonTitle: String
+    let onTapped: () -> Void
+    
+    var body: some View {
+        VStack {
+            Image(image)
+                .resizable()
+                .frame(width: 200, height: 200)
+                .scaledToFill()
+                .clipShape(.rect(cornerRadius: 20))
+            
+            Button("Open \(buttonTitle)", action: onTapped)
+        }
     }
 }
 

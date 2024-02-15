@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D14B9D342B7E5FB40041BB45 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = D14B9D332B7E5FB40041BB45 /* RealityKitContent */; };
-		D14B9D362B7E5FB40041BB45 /* MultipleWindowAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14B9D352B7E5FB40041BB45 /* MultipleWindowAppApp.swift */; };
+		D14B9D362B7E5FB40041BB45 /* MultipleWindowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14B9D352B7E5FB40041BB45 /* MultipleWindowApp.swift */; };
 		D14B9D382B7E5FB40041BB45 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14B9D372B7E5FB40041BB45 /* ContentView.swift */; };
 		D14B9D3A2B7E5FB50041BB45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D14B9D392B7E5FB50041BB45 /* Assets.xcassets */; };
 		D14B9D3D2B7E5FB50041BB45 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D14B9D3C2B7E5FB50041BB45 /* Preview Assets.xcassets */; };
+		D14B9D452B7E62F50041BB45 /* ImageWindows.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14B9D442B7E62F50041BB45 /* ImageWindows.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D14B9D2E2B7E5FB40041BB45 /* MultipleWindowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultipleWindowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D14B9D322B7E5FB40041BB45 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
-		D14B9D352B7E5FB40041BB45 /* MultipleWindowAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleWindowAppApp.swift; sourceTree = "<group>"; };
+		D14B9D352B7E5FB40041BB45 /* MultipleWindowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleWindowApp.swift; sourceTree = "<group>"; };
 		D14B9D372B7E5FB40041BB45 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D14B9D392B7E5FB50041BB45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D14B9D3C2B7E5FB50041BB45 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D14B9D3E2B7E5FB50041BB45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D14B9D442B7E62F50041BB45 /* ImageWindows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWindows.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,7 +29,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D14B9D342B7E5FB40041BB45 /* RealityKitContent in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,7 +39,6 @@
 			isa = PBXGroup;
 			children = (
 				D14B9D302B7E5FB40041BB45 /* MultipleWindowApp */,
-				D14B9D312B7E5FB40041BB45 /* Packages */,
 				D14B9D2F2B7E5FB40041BB45 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,21 +54,14 @@
 		D14B9D302B7E5FB40041BB45 /* MultipleWindowApp */ = {
 			isa = PBXGroup;
 			children = (
-				D14B9D352B7E5FB40041BB45 /* MultipleWindowAppApp.swift */,
+				D14B9D352B7E5FB40041BB45 /* MultipleWindowApp.swift */,
 				D14B9D372B7E5FB40041BB45 /* ContentView.swift */,
+				D14B9D442B7E62F50041BB45 /* ImageWindows.swift */,
 				D14B9D392B7E5FB50041BB45 /* Assets.xcassets */,
 				D14B9D3E2B7E5FB50041BB45 /* Info.plist */,
 				D14B9D3B2B7E5FB50041BB45 /* Preview Content */,
 			);
 			path = MultipleWindowApp;
-			sourceTree = "<group>";
-		};
-		D14B9D312B7E5FB40041BB45 /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				D14B9D322B7E5FB40041BB45 /* RealityKitContent */,
-			);
-			path = Packages;
 			sourceTree = "<group>";
 		};
 		D14B9D3B2B7E5FB50041BB45 /* Preview Content */ = {
@@ -98,7 +89,6 @@
 			);
 			name = MultipleWindowApp;
 			packageProductDependencies = (
-				D14B9D332B7E5FB40041BB45 /* RealityKitContent */,
 			);
 			productName = MultipleWindowApp;
 			productReference = D14B9D2E2B7E5FB40041BB45 /* MultipleWindowApp.app */;
@@ -155,7 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D14B9D382B7E5FB40041BB45 /* ContentView.swift in Sources */,
-				D14B9D362B7E5FB40041BB45 /* MultipleWindowAppApp.swift in Sources */,
+				D14B9D362B7E5FB40041BB45 /* MultipleWindowApp.swift in Sources */,
+				D14B9D452B7E62F50041BB45 /* ImageWindows.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,13 +346,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		D14B9D332B7E5FB40041BB45 /* RealityKitContent */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = RealityKitContent;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D14B9D262B7E5FB40041BB45 /* Project object */;
 }
